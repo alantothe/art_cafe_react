@@ -1,7 +1,7 @@
 import React from "react";
 
-function Type() {
+function Edit() {
   return <div></div>;
 }
 
-export default Type;
+export default Edit;

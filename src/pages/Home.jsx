@@ -1,7 +1,7 @@
-import React from "react";
+import SearchResult from "../components/SearchResult/SearchResult.jsx";
 
 function Home() {
-  return <div></div>;
+  return <SearchResult />;
 }
 
 export default Home;

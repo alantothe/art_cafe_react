@@ -5,7 +5,7 @@ import Date from "./FilterBy/Date";
 import Period from "./FilterBy/Period";
 import Type from "./FilterBy/Type";
 
-function FilterBar() {
+function FilterBar({ onArtistClick }) {
   return (
     <div
       className="flex flex-row justify-center items-center space-x-20 h-16 border-b border-[#eee9e5]"
@@ -14,7 +14,7 @@ function FilterBar() {
       }}
     >
       <label className="flex items-start font-extralight">Filter by:</label>
-      <Artist />
+      <Artist onButtonClick={onArtistClick} />
       <Culture />
       <Date />
       <Period />

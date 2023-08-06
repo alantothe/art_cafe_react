@@ -1,13 +1,14 @@
 import SearchResult from "../components/SearchResult/SearchResult.jsx";
 import SearchBar from "../components/SearchBar.jsx";
 import FilterBar from "../components/FilterBar/FilterBar.jsx";
-import FilterBarExpand from "../components/FilterBar/FilterBarExpand.jsx";
+import ArtistResult from "../components/FilterBar/FilterBy/Artist/ArtistResult.jsx";
+
 function Home() {
   return (
     <div>
       <SearchBar />
       <FilterBar />
-      <FilterBarExpand />
+      <ArtistResult />
       <SearchResult />
     </div>
   );

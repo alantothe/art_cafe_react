@@ -1,5 +1,5 @@
 import React from "react";
-import Artist from "./FilterBy/Artist";
+import Artist from "./FilterBy/Artist/Artist.jsx";
 import Culture from "./FilterBy/Culture";
 import Date from "./FilterBy/Date";
 import Period from "./FilterBy/Period";

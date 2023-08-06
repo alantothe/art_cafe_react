@@ -1,5 +1,3 @@
-import React, { useState, useEffect } from "react";
-
 function Artist() {
   return (
     <div className="hover:border-b-4 border-orange-500">

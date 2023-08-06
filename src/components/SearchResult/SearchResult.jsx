@@ -1,19 +1,9 @@
-import { useState, useEffect } from "react";
-import { getArt } from "../../api/art";
+import { useContext } from "react";
 import ArtDetail from "../SearchResult/ArtDetail.jsx";
+import { ArtContext } from "../../ArtContext";
 
 function SearchResult() {
-  const [art, setArt] = useState([]);
-
-  useEffect(() => {
-    fetchCats();
-  }, []);
-
-  async function fetchCats() {
-    const allArt = await getArt();
-    setArt(allArt);
-    console.log(allArt);
-  }
+  const art = useContext(ArtContext);
   return (
     <div className="grid grid-cols-4 gap-x-8 gap-y-4 mx-40 ">
       {art.map((art) => (

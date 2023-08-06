@@ -6,9 +6,17 @@ function ArtDetail({ art }) {
     <div>
       <div>
         <Link to={`/id/${art.imageId}`}>
-          <div className="w-1/4">
-            <div>
-              <img className="" src={art.imageURL} alt={art.title} />
+          <div>
+            <div className="flex justify-center">
+              <img
+                className="h-80"
+                src={
+                  art.imageURL !== "https://http.cat/status/204"
+                    ? art.imageURL
+                    : "https://puam-loris.aws.princeton.edu/loris/notavailnew.jp2/full/!650,650/0/default.jpg"
+                }
+                alt={art.title}
+              />
             </div>
             <div className="flex flex-row">
               <p className=" font-bold text-sm">{art.title}</p>

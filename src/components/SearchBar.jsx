@@ -5,7 +5,7 @@ function SearchBar() {
     <>
       <form>
         <div
-          className="h-40 flex item-center justify-center"
+          className=" h-52 flex item-center justify-center border-b border-[#eee9e5]"
           style={{
             backgroundColor: "#fdf7f3",
           }}

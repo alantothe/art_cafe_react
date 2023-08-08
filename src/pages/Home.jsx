@@ -7,8 +7,13 @@ import ArtistResult from "../components/FilterBar/FilterBy/Artist/ArtistResult.j
 function Home() {
   const [showArtistResult, setShowArtistResult] = useState(false);
 
-  const toggleArtistResult = () => {
-    setShowArtistResult((prevState) => !prevState);
+  const toggleArtistResult = (isChecked) => {
+    if (isChecked) {
+      setShowArtistResult(true);
+    } else {
+      setShowArtistResult(false);
+      // Do any other resetting here if required
+    }
   };
 
   return (

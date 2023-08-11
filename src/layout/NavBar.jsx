@@ -3,8 +3,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 function NavBar() {
-  const handleHover = () => {};
-
   return (
     <div className="bg-black m-0 flex flex-row justify-stretch ">
       <div id="left" className="w-1/2 flex flex-col">

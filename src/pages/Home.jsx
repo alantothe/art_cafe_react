@@ -12,7 +12,7 @@ function Home() {
       setShowArtistResult(true);
     } else {
       setShowArtistResult(false);
-      // Do any other resetting here if required
+    
     }
   };
 

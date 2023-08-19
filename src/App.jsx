@@ -8,7 +8,6 @@ import { Routes, Route } from "react-router-dom";
 import { ArtContext } from "./ArtContext";
 import { getArt } from "./api/art";
 import { useState, useEffect } from "react";
-import Alan from "./test/Alan";
 
 function App() {
   const [artList, setArtList] = useState([]);
@@ -52,7 +51,6 @@ function App() {
           <Route path="/submit" element={<Submit />} />
           <Route path="/id/:imageId" element={<ArtDetail />} />
           <Route path="/edit/:imageId/" element={<EditPage />} />
-          <Route path="/alantothe" element={<Alan />} />
         </Routes>
         <Footer />
       </ArtContext.Provider>
